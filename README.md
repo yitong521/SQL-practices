@@ -1,2 +1,2 @@
 # SQL-practices
-## practicing SQL & important 
+## practicing SQL & important knowledges
