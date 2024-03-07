@@ -385,3 +385,7 @@ a. CAST( substring_index(tag, ',', -1) AS DECIMAL
 SELECT IF(profile LIKE '%female','female','male') gender,COUNT(*) number
 FROM user_submit
 GROUP BY gender;
+
+30. limit 可以跳行
+    LIMIT m,n : 表示从第m+1条开始，取n条数据；
+    LIMIT n ： 表示从第0条开始，取n条数据，是limit(0,n)的缩写
