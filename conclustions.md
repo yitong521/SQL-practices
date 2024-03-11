@@ -389,3 +389,5 @@ GROUP BY gender;
 30. limit 可以跳行
     LIMIT m,n : 表示从第m+1条开始，取n条数据；
     LIMIT n ： 表示从第0条开始，取n条数据，是limit(0,n)的缩写
+31. offset
+    LIMIT 1 OFFSET 2              -- 去掉排名倒数第一第二的时间，取倒数第三
