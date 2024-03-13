@@ -391,3 +391,10 @@ GROUP BY gender;
     LIMIT n ： 表示从第0条开始，取n条数据，是limit(0,n)的缩写
 31. offset
     LIMIT 1 OFFSET 2              -- 去掉排名倒数第一第二的时间，取倒数第三
+32. &
+    课程难度是简单的，奇偶判断下意识会用mod()函数，%2的想法
+    【通过二进制方式，&字符判断奇偶】
+    select *
+    from employees
+    where emp_no&1 =1 and last_name <>'Mary'
+    order by hire_date DESC
